@@ -4,20 +4,23 @@ rootdir: /home/runner/work/Assessment-Backend-Week-2/Assessment-Backend-Week-2/m
 collected 73 items
 
 test_queries.py ................................                         [ 43%]
-test_routes.py ...............................FFFFFFFFFF                 [100%]
+test_routes.py ....................................FFFFF                 [100%]
 
-======================== 10 failed, 63 passed in 9.99s =========================
+========================= 5 failed, 68 passed in 9.91s =========================
 ************* Module api
 marine_experiments/api.py:45:0: C0303: Trailing whitespace (trailing-whitespace)
 marine_experiments/api.py:54:0: C0303: Trailing whitespace (trailing-whitespace)
 marine_experiments/api.py:57:28: C0303: Trailing whitespace (trailing-whitespace)
 marine_experiments/api.py:35:0: C0116: Missing function or method docstring (missing-function-docstring)
 marine_experiments/api.py:37:4: W0622: Redefining built-in 'type' (redefined-builtin)
+marine_experiments/api.py:81:0: C0116: Missing function or method docstring (missing-function-docstring)
+marine_experiments/api.py:81:15: W0622: Redefining built-in 'id' (redefined-builtin)
+marine_experiments/api.py:81:0: R1710: Either all return statements in a function should return an expression, or none of them should. (inconsistent-return-statements)
 marine_experiments/api.py:3:0: W0611: Unused datetime imported from datetime (unused-import)
 marine_experiments/api.py:6:0: W0611: Unused sql imported from psycopg2 (unused-import)
 ************* Module database_functions
 marine_experiments/database_functions.py:16:0: C0304: Final newline missing (missing-final-newline)
 
 ------------------------------------------------------------------
-Your code has been rated at 8.18/10 (previous run: 8.18/10, +0.00)
+Your code has been rated at 7.88/10 (previous run: 7.88/10, +0.00)
 
