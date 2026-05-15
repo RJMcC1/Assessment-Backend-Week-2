@@ -77,6 +77,18 @@ def experiment_get():
     return jsonify(results), 200
 
 
+@app.route("/experiment/<int:id>", methods = ['DELETE'])
+def sus_delete(id):
+    if request.method == 'DELETE':
+        cursor = conn.cursor(cursor_factory=RealDictCursor)
+        cursor.execute("SELECT * FROM experiment WHERE experiment_id = %s", [id])
+        result = cursor.fetchone()
+        if result is None:
+            return {"error": f"Unable to locate experiment with ID {id}."}, 404
+        return {}, 200
+
+
+
 if __name__ == "__main__":
     app.config["DEBUG"] = True
     app.config["TESTING"] = True
